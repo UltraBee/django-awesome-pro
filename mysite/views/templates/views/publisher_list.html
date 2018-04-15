@@ -1,0 +1,6 @@
+<h1>publisher list</h1>
+<ul>
+    {% for i in publisher_list %}
+        <li><a href="{% url 'show_publisher' i.id %}">{{ i.name }}</a></li>
+    {% endfor %}
+</ul>
